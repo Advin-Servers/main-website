@@ -1,0 +1,485 @@
+<script setup>
+import AppLayout from '@/Layouts/AppLayout.vue';
+import Welcome from '@/Components/Welcome.vue';
+import SVGCheck from "@/Components/SVGCheck.vue";
+import { CpuChipIcon } from '@heroicons/vue/24/outline'
+import { WifiIcon } from '@heroicons/vue/24/outline'
+import { CloudIcon } from '@heroicons/vue/24/outline'
+import { BanknotesIcon } from '@heroicons/vue/24/outline'
+import { ServerStackIcon } from "@heroicons/vue/24/outline";
+import { HeartIcon } from "@heroicons/vue/24/outline";
+import PricingCardHome from "@/Components/PricingCardHome.vue";
+import {CheckIcon} from "@heroicons/vue/20/solid/index.js";
+</script>
+
+<template>
+    <AppLayout title="Dashboard">
+        <!-- Background Layer -->
+        <div class="bg-black">
+            <div class="relative py-12 isolate ">
+                <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+                    <div class="relative left-[calc(50%-11rem)] aspect-[1155/878] w-[36.125rem] -translate-x-1/4 rotate-[10deg] bg-gradient-to-tr from-[#8086ff] to-[#8b89fc] opacity-15 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
+                </div>
+                <!-- Content Layer -->
+                <div class="relative max-w-7xl mx-auto px-3 pt-20">
+                    <div class="overflow-hidden sm:rounded-lg">
+                        <div class="mt-20 mx-auto mb-20">
+
+                            <h1 class="mb-4 font-bold text-6xl">
+                        <span class="text-white">
+                            Cloud Servers
+                        </span>
+                            </h1>
+                            <p class="font-normal text-white text-2xl mt-6">
+                                High performance virtual servers, powered by KVM. <br />
+                                No contract, monthly billed.
+                            </p>
+                            <ul class="list-disc text-white list-inside mt-5">
+                                <li>7 day money back guarantee</li>
+                                <li>Enterprise hardware with great support</li>
+                                <li>Global availability of servers, 99.99% SLA guarantee</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-3 pt-10">
+            <div class="overflow-hidden sm:rounded-lg">
+                <div class="mt-5 mx-auto">
+                    <h1 class="mb-4 font-bold text-3xl">
+                        <span class="text-black">
+                            Our Products
+                        </span>
+                        </h1>
+
+
+                        <div class="grid grid-cols-3 gap-4 max-w-screen-xl">
+                            <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 mt-5">
+                                <h5 class="mb-1 text-xl font-medium text-gray-500">KVM Standard XS</h5>
+                                <h5 class="mb-1 text-sm font-thin text-gray-400">Starting at</h5>
+                                <div class="flex items-baseline text-gray-900">
+                                    <span class="text-3xl font-semibold">$</span>
+                                    <span class="text-5xl font-extrabold tracking-tight">6.99</span>
+                                    <span class="ms-1 text-xl font-normal text-gray-500">/month</span>
+                                </div>
+                                <ul role="list" class="space-y-2 my-4">
+                                    <li class="flex items-center">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">AMD EPYC Processor (4 vCPU)</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">1 dedicated, 3 shared vCPU</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">8GB DDR4 ECC Memory</span>
+                                    </li>
+                                    <li class="flex">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">60GB Gen4 NVMe SSD Storage</span>
+                                    </li>
+                                    <li class="flex">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">2TB Bandwidth @ 10 Gbps</span>
+                                    </li>
+                                </ul>
+                                <button type="button" class="text-white bg-black hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Learn More</button>
+                            </div>
+                            <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 mt-5">
+                                <h5 class="mb-1 text-xl font-medium text-gray-500">KVM Standard S</h5>
+                                <h5 class="mb-1 text-sm font-thin text-gray-400">Starting at</h5>
+                                <div class="flex items-baseline text-gray-900">
+                                    <span class="text-3xl font-semibold">$</span>
+                                    <span class="text-5xl font-extrabold tracking-tight">11.99</span>
+                                    <span class="ms-1 text-xl font-normal text-gray-500">/month</span>
+                                </div>
+                                <ul role="list" class="space-y-2 my-4">
+                                    <li class="flex items-center">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">AMD EPYC Processor (6 vCPU)</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">2 dedicated, 4 shared vCPU</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">16GB DDR4 ECC Memory</span>
+                                    </li>
+                                    <li class="flex">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">120GB Gen4 NVMe SSD Storage</span>
+                                    </li>
+                                    <li class="flex">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">4TB Bandwidth @ 10 Gbps</span>
+                                    </li>
+                                </ul>
+                                <button type="button" class="text-white bg-black hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Learn More</button>
+                            </div>
+                            <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 mt-5">
+                                <h5 class="mb-1 text-xl font-medium text-gray-500">KVM Standard M</h5>
+                                <h5 class="mb-1 text-sm font-thin text-gray-400">Starting at</h5>
+                                <div class="flex items-baseline text-gray-900">
+                                    <span class="text-3xl font-semibold">$</span>
+                                    <span class="text-5xl font-extrabold tracking-tight">23.99</span>
+                                    <span class="ms-1 text-xl font-normal text-gray-500">/month</span>
+                                </div>
+                                <ul role="list" class="space-y-2 my-4">
+                                    <li class="flex items-center">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">AMD EPYC Processor (8 vCPU)</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">4 dedicated, 4 shared vCPU</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">32GB DDR4 ECC Memory</span>
+                                    </li>
+                                    <li class="flex">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">240GB Gen4 NVMe SSD Storage</span>
+                                    </li>
+                                    <li class="flex">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">8TB Bandwidth @ 10 Gbps</span>
+                                    </li>
+                                </ul>
+                                <button type="button" class="text-white bg-black hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Learn More</button>
+                            </div>
+                            <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 mt-5">
+                                <h5 class="mb-1 text-xl font-medium text-gray-500">KVM Standard ML</h5>
+                                <h5 class="mb-1 text-sm font-thin text-gray-400">Starting at</h5>
+                                <div class="flex items-baseline text-gray-900">
+                                    <span class="text-3xl font-semibold">$</span>
+                                    <span class="text-5xl font-extrabold tracking-tight">35.99</span>
+                                    <span class="ms-1 text-xl font-normal text-gray-500">/month</span>
+                                </div>
+                                <ul role="list" class="space-y-2 my-4">
+                                    <li class="flex items-center">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">AMD EPYC Processor (10 vCPU)</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">6 dedicated, 4 shared vCPU</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">48GB DDR4 ECC Memory</span>
+                                    </li>
+                                    <li class="flex">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">360GB Gen4 NVMe SSD Storage</span>
+                                    </li>
+                                    <li class="flex">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">12TB Bandwidth @ 10 Gbps</span>
+                                    </li>
+                                </ul>
+                                <button type="button" class="text-white bg-black hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Learn More</button>
+                            </div>
+                            <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 mt-5">
+                                <h5 class="mb-1 text-xl font-medium text-gray-500">KVM Standard L</h5>
+                                <h5 class="mb-1 text-sm font-thin text-gray-400">Starting at</h5>
+                                <div class="flex items-baseline text-gray-900">
+                                    <span class="text-3xl font-semibold">$</span>
+                                    <span class="text-5xl font-extrabold tracking-tight">46.99</span>
+                                    <span class="ms-1 text-xl font-normal text-gray-500">/month</span>
+                                </div>
+                                <ul role="list" class="space-y-2 my-4">
+                                    <li class="flex items-center">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">AMD EPYC Processor (12 vCPU)</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">8 dedicated, 4 shared vCPU</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">64GB DDR4 ECC Memory</span>
+                                    </li>
+                                    <li class="flex">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">480GB Gen4 NVMe SSD Storage</span>
+                                    </li>
+                                    <li class="flex">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">16TB Bandwidth @ 10 Gbps</span>
+                                    </li>
+                                </ul>
+                                <button type="button" class="text-white bg-black hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Learn More</button>
+                            </div>
+                            <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 mt-5">
+                                <h5 class="mb-1 text-xl font-medium text-gray-500">KVM Standard XL</h5>
+                                <h5 class="mb-1 text-sm font-thin text-gray-400">Starting at</h5>
+                                <div class="flex items-baseline text-gray-900">
+                                    <span class="text-3xl font-semibold">$</span>
+                                    <span class="text-5xl font-extrabold tracking-tight">83.99</span>
+                                    <span class="ms-1 text-xl font-normal text-gray-500">/month</span>
+                                </div>
+                                <ul role="list" class="space-y-2 my-4">
+                                    <li class="flex items-center">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">AMD EPYC Processor (24 vCPU)</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">16 dedicated, 8 shared vCPU</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">128GB DDR4 ECC Memory</span>
+                                    </li>
+                                    <li class="flex">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">960GB Gen4 NVMe SSD Storage</span>
+                                    </li>
+                                    <li class="flex">
+                                        <CheckIcon class="h-6 w-5 flex-none text-black" aria-hidden="true" />
+                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">32TB Bandwidth @ 10 Gbps</span>
+                                    </li>
+                                </ul>
+                                <button type="button" class="text-white bg-black hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Learn More</button>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="relative max-w-7xl mx-auto px-3 pt-10 ">
+                    <div class="overflow-hidden sm:rounded-lg">
+                        <div class="mt-5 mx-auto">
+                            <h1 class="mb-4 font-bold text-3xl text-black">
+                                Cloud Locations
+                            </h1>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="bg-white mr-5 ml-1 mt-5">
+                                        <div class="mb-6 md:mb-8 rounded-md border-solid border-2 w-16 h-16 flex items-center justify-center">
+                                            <img width="48" height="48" src="https://img.icons8.com/color/48/usa.png" alt="usa"/>
+                                        </div>
+                                        <h4 class="text-xl font-bold mb-2">Buffalo, NY</h4>
+                                        <p class="text-gray-700">
+                                            Located in ColoCrossing BUF1 datacenter, our Buffalo location offers great connectivity to the East Coast and Canada.
+                                        </p>
+                                        <p class="text-sm mt-2">Address: 325 Delaware Ave, Buffalo, NY 14202</p>
+                                    </div>
+                                </div>
+
+                                <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="bg-white mr-5 ml-5 mt-5">
+                                        <div class="mb-6 md:mb-8 rounded-md border-solid border-2 w-16 h-16 flex items-center justify-center">
+                                            <img width="48" height="48" src="https://img.icons8.com/color/48/usa.png" alt="usa"/>
+                                        </div>
+                                        <h4 class="text-xl font-bold mb-2">Miami, FL</h4>
+                                        <p class="text-gray-700">
+                                            Located in ColoHouse MIA1 datacenter, our Miami location offers great connectivity to South America and the Caribbean.
+                                        </p>
+                                        <p class="text-sm mt-2">Address: 36 NE 2nd St STE 400, Miami, FL 33132</p>
+                                    </div>
+                                </div>
+
+                                <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="bg-white mr-5 ml-5 mt-5">
+                                        <div class="mb-6 md:mb-8 rounded-md border-solid border-2 w-16 h-16 flex items-center justify-center">
+                                            <img width="48" height="48" src="https://img.icons8.com/color/48/usa.png" alt="usa"/>
+                                        </div>
+                                        <h4 class="text-xl font-bold mb-2">Los Angeles, CA</h4>
+                                        <p class="text-gray-700">
+                                            Located in Evocative LAX2, our Los Angeles location offers great connectivity to Asia and the west coast of the United States.
+                                        </p>
+                                        <p class="text-sm mt-2">Address: 600 W 7th St, Los Angeles, CA 90017</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
+                                <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="bg-white mr-5 ml-1 mt-5">
+                                        <div class="mb-6 md:mb-8 rounded-md border-solid border-2 w-16 h-16 flex items-center justify-center">
+                                            <img width="48" height="48" src="https://img.icons8.com/color/48/germany.png" alt="usa"/>
+                                        </div>
+                                        <h4 class="text-xl font-bold mb-2">Nuremberg, DE</h4>
+                                        <p class="text-gray-700">
+                                            Located in Hetzner Online GmbH, our Germany location offers great connectivity to Europe and the Middle East.
+                                        </p>
+                                        <p class="text-sm mt-2">Address: Sigmundstraße 135, 90431 Nürnberg</p>
+                                    </div>
+                                </div>
+
+                                <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="bg-white mr-5 ml-5 mt-5">
+                                        <div class="mb-6 md:mb-8 rounded-md border-solid border-2 w-16 h-16 flex items-center justify-center">
+                                            <img width="48" height="48" src="https://img.icons8.com/color/48/singapore.png" alt="usa"/>
+                                        </div>
+                                        <h4 class="text-xl font-bold mb-2">Singapore</h4>
+                                        <p class="text-gray-700">
+                                            Located in RacksCentral SG1, our Singapore location offers great connectivity to Asia and the Pacific.
+                                        </p>
+                                        <p class="text-sm mt-2">Address: 23 Tai Seng Dr, Singapore 535224</p>
+                                    </div>
+                                </div>
+
+                                <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="bg-white mr-5 ml-5 mt-5">
+                                        <div class="mb-6 md:mb-8 rounded-md border-solid border-2 w-16 h-16 flex items-center justify-center">
+                                            <img width="48" height="48" src="https://img.icons8.com/color/48/japan.png" alt="usa"/>
+                                        </div>
+                                        <h4 class="text-xl font-bold mb-2">Osaka, JP</h4>
+                                        <p class="text-gray-700">
+                                            Located in Equinix OS1, our Osaka location offers great connectivity to Japan and the rest of Asia.
+                                        </p>
+                                        <p class="text-sm mt-2">Address: 1-26-1 Shinmachi, Nishi-ku, 550-0013
+                                            Osaka
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative max-w-7xl mx-auto px-3 pt-10">
+                    <h1 class="mb-4 font-bold text-3xl text-black">
+                        Control Panel
+                    </h1>
+                    <div class="flex flex-wrap">
+                        <div class="w-full lg:w-1/2">
+                            <img class="m-1  mt-5" src="https://fro-images.b-cdn.net/chrome_QJAriEk3xf.png" alt="VPS Panel">
+                        </div>
+                        <div class="w-full lg:w-5/12 ml-auto">
+                            <h2 class="mt-5">Cloud Servers with real performance</h2>
+                            <p class="text-lg pt-2 pb-3">
+                                Utilizing the latest Intel &amp; AMD Chip with SSD / NVMe Storage &amp; 1Gbps Uplink.
+                            </p>
+                            <p>
+                                We offer unmatched performance by using the worlds latest consumer chips, matched with unmetred bandwidth and a network with the most advanced DDoS Protection systems.
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="flex flex-wrap mt-5 pt-3">
+                        <div class="w-full lg:w-1/3">
+                            <img class="mb-3" alt="Manage Multiple Servers">
+                            <h4 class="pt-1">Manage Multiple Servers</h4>
+                            <p class="pt-2 pb-0">
+                                Make managing multiple virtual instances a breeze with our intuitive Virtualizor control panel allowing you to control all servers from one page.
+                            </p>
+                        </div>
+
+                        <div class="w-full lg:w-1/3">
+                            <img class="mb-3" alt="Resource Monitoring">
+                            <h4 class="pt-1">Resource Monitoring</h4>
+                            <p class="pt-2 pb-0">
+                                Get live and real statistics about your instances through our Virtualizor control panel.
+                            </p>
+                        </div>
+
+                        <div class="w-full lg:w-1/3">
+                            <img class="mb-3" alt="1-Click OS Installations">
+                            <h4 class="pt-1">1-Click OS Installations</h4>
+                            <p class="pt-2 pb-0">
+                                Easy to use 1-Click OS Installations for the likes of Ubuntu, CentOS, Windows &amp; Many More.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="relative max-w-7xl mx-auto px-3 pt-10">
+                    <div class="overflow-hidden sm:rounded-lg">
+                        <div class="mt-5 mx-auto">
+                            <h1 class="mb-4 font-bold text-3xl">
+                            <span class="text-black">
+                                Features
+                            </span>
+                            </h1>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="bg-white mr-5 ml-1 mt-5">
+                                        <div class="mb-6 md:mb-8 rounded-md border-solid border-2 w-16 h-16 flex items-center justify-center">
+                                            <CpuChipIcon class="h-10 text-black"> </CpuChipIcon>
+                                        </div>
+                                        <h4 class="text-xl font-bold mb-2">Lightning Fast CPUs</h4>
+                                        <p class="text-gray-700">
+                                            We only use some of the fastest and highest end CPUs in our servers, including AMD EPYC Genoa and Milan series of processors.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="bg-white mr-5 ml-5 mt-5">
+                                        <div class="mb-6 md:mb-8 rounded-md border-solid border-2 w-16 h-16 flex items-center justify-center">
+                                            <WifiIcon class="h-10 text-black"> </WifiIcon>
+                                        </div>
+                                        <h4 class="text-xl font-bold mb-2">Network</h4>
+                                        <p class="text-gray-700">
+                                            We offer up to 10 Gbit network uplinks in most of our locations, a massive upgrade from what is typically standard of cloud servers.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                                    <div class="bg-white mr-5 ml-5 mt-5">
+                                        <div class="mb-6 md:mb-8 rounded-md border-solid border-2 w-16 h-16 flex items-center justify-center">
+                                            <CloudIcon class="h-10 text-black"> </CloudIcon>
+                                        </div>
+                                        <h4 class="text-xl font-bold mb-2">All NVMe Storage</h4>
+                                        <p class="text-gray-700">
+                                            Almost all of our servers contain lightning fast solid state storage, resulting in low latency access times to your data.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="bg-white mr-5 ml-1 mt-5">
+                                        <div class="mb-6 md:mb-8 rounded-md border-solid border-2 w-16 h-16 flex items-center justify-center">
+                                            <BanknotesIcon class="h-10 text-black"> </BanknotesIcon>
+                                        </div>
+                                        <h4 class="text-xl font-bold mb-2">Affordable</h4>
+                                        <p class="text-gray-700">
+                                            We are one of the cheapest cloud service providers in the market, offering high performance servers at a fraction of the cost.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="bg-white mr-5 ml-5 mt-5">
+                                        <div class="mb-6 md:mb-8 rounded-md border-solid border-2 w-16 h-16 flex items-center justify-center">
+                                            <ServerStackIcon class="h-10 text-black"> </ServerStackIcon>
+                                        </div>
+                                        <h4 class="text-xl font-bold mb-2">Owned Infrastructure</h4>
+                                        <p class="text-gray-700">
+                                            We own all of our hardware across nearly all of our cloud server regions, allowing us to deliver high performance at an affordable price.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                                    <div class="bg-white mr-5 ml-5 mt-5 mb-20">
+                                        <div class="mb-6 md:mb-8 rounded-md border-solid border-2 w-16 h-16 flex items-center justify-center">
+                                            <HeartIcon class="h-10 text-black"> </HeartIcon>
+                                        </div>
+                                        <h4 class="text-xl font-bold mb-2">Reliable</h4>
+                                        <p class="text-gray-700">
+                                            All services come with a 99.9% uptime SLA policy by default. We use enterprise gear and redundant systems to ensure reliability.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </AppLayout>
+
+</template>
