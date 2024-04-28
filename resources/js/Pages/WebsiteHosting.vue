@@ -11,9 +11,14 @@ import { HeartIcon } from "@heroicons/vue/24/outline";
 import {CheckIcon} from "@heroicons/vue/20/solid/index.js";
 import {BuildingStorefrontIcon} from "@heroicons/vue/24/outline";
 import {ArrowDownOnSquareIcon} from "@heroicons/vue/24/outline";
+import {Head} from "@inertiajs/vue3";
 </script>
-
 <template>
+    <Head>
+        <title>Website Hosting</title>
+        <meta head-key="description" name="description" content="Get cPanel or DirectAdmin website hosting starting at just $1.99/month on high-performance hardware." />
+        <meta head-key="keywords" name="keywords" content="Advin Servers, affordable hosting solutions, reliable hosting services, cpanel hosting, website hosting, directadmin hosting" />
+    </Head>
     <AppLayout title="Dashboard">
         <!-- Background Layer -->
         <div class="bg-black">

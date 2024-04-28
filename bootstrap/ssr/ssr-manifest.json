@@ -7,13 +7,10 @@
     "/build/assets/ActionMessage-CMRC4Q_0.js"
   ],
   "resources/js/Components/ActionSection.vue": [
-    "/build/assets/DialogModal-CSwO3wGb.js"
+    "/build/assets/DialogModal-B-eK4OWS.js"
   ],
   "resources/js/Components/ApplicationLogo.vue": [
-    "/build/assets/Dashboard-pnLjovTl.js"
-  ],
-  "resources/js/Components/ApplicationMark.vue": [
-    "/build/assets/AppLayout-vAVHwAbW.js"
+    "/build/assets/Welcome-Bl6snZoX.js"
   ],
   "resources/js/Components/AuthenticationCard.vue": [
     "/build/assets/AuthenticationCard-C9mEk27i.js"
@@ -21,32 +18,32 @@
   "resources/js/Components/AuthenticationCardLogo.vue": [
     "/build/assets/AuthenticationCardLogo-BE7wXEGb.js"
   ],
-  "resources/js/Components/Banner.vue": [
-    "/build/assets/AppLayout-vAVHwAbW.js"
+  "resources/js/Components/CardSection.vue": [
+    "/build/assets/Faq-HilIPF7B.js"
   ],
   "resources/js/Components/Checkbox.vue": [
     "/build/assets/Checkbox-BBcrr1ex.js"
   ],
   "resources/js/Components/ConfirmationModal.vue": [
-    "/build/assets/ApiTokenManager-CFSs1fui.js"
+    "/build/assets/ApiTokenManager-DAry7OGE.js"
   ],
   "resources/js/Components/ConfirmsPassword.vue": [
-    "/build/assets/TwoFactorAuthenticationForm-BQHSVZRO.js"
+    "/build/assets/TwoFactorAuthenticationForm-LTvOglrl.js"
   ],
   "resources/js/Components/DangerButton.vue": [
     "/build/assets/DangerButton-s5hiF3bK.js"
   ],
   "resources/js/Components/DialogModal.vue": [
-    "/build/assets/DialogModal-CSwO3wGb.js"
+    "/build/assets/DialogModal-B-eK4OWS.js"
   ],
-  "resources/js/Components/Dropdown.vue": [
-    "/build/assets/AppLayout-vAVHwAbW.js"
+  "resources/js/Components/Faq.vue": [
+    "/build/assets/Faq-HilIPF7B.js"
   ],
-  "resources/js/Components/DropdownLink.vue": [
-    "/build/assets/AppLayout-vAVHwAbW.js"
+  "resources/js/Components/Footer.vue": [
+    "/build/assets/AppLayout-Dy8sg2VP.js"
   ],
   "resources/js/Components/FormSection.vue": [
-    "/build/assets/FormSection-Cf0LXcE6.js"
+    "/build/assets/FormSection-ybvcGyGW.js"
   ],
   "resources/js/Components/InputError.vue": [
     "/build/assets/TextInput-B0hF2b1y.js"
@@ -55,16 +52,16 @@
     "/build/assets/InputLabel-Do1v5jZF.js"
   ],
   "resources/js/Components/Modal.vue": [
-    "/build/assets/DialogModal-CSwO3wGb.js"
+    "/build/assets/DialogModal-B-eK4OWS.js"
   ],
   "resources/js/Components/NavLink.vue": [
-    "/build/assets/AppLayout-vAVHwAbW.js"
+    "/build/assets/AppLayout-Dy8sg2VP.js"
   ],
   "resources/js/Components/PrimaryButton.vue": [
     "/build/assets/PrimaryButton-DzU40Tsu.js"
   ],
-  "resources/js/Components/ResponsiveNavLink.vue": [
-    "/build/assets/AppLayout-vAVHwAbW.js"
+  "resources/js/Components/SVGCheck.vue": [
+    "/build/assets/SVGCheck-CgF4JDP-.js"
   ],
   "resources/js/Components/SecondaryButton.vue": [
     "/build/assets/SecondaryButton-CuwfkeiC.js"
@@ -73,22 +70,22 @@
     "/build/assets/SectionBorder-DyqoGRve.js"
   ],
   "resources/js/Components/SectionTitle.vue": [
-    "/build/assets/SectionTitle-DsKZJEmq.js"
+    "/build/assets/SectionTitle-CZQPTZ98.js"
   ],
   "resources/js/Components/TextInput.vue": [
     "/build/assets/TextInput-B0hF2b1y.js"
   ],
   "resources/js/Components/Welcome.vue": [
-    "/build/assets/Dashboard-pnLjovTl.js"
+    "/build/assets/Welcome-Bl6snZoX.js"
   ],
   "resources/js/Layouts/AppLayout.vue": [
-    "/build/assets/AppLayout-vAVHwAbW.js"
+    "/build/assets/AppLayout-Dy8sg2VP.js"
   ],
   "resources/js/Pages/API/Index.vue": [
-    "/build/assets/Index-Mg8pHJ5f.js"
+    "/build/assets/Index-V--J52rS.js"
   ],
   "resources/js/Pages/API/Partials/ApiTokenManager.vue": [
-    "/build/assets/ApiTokenManager-CFSs1fui.js"
+    "/build/assets/ApiTokenManager-DAry7OGE.js"
   ],
   "resources/js/Pages/Auth/ConfirmPassword.vue": [
     "/build/assets/ConfirmPassword-DsCzMSHO.js"
@@ -111,35 +108,50 @@
   "resources/js/Pages/Auth/VerifyEmail.vue": [
     "/build/assets/VerifyEmail-DujjKN0r.js"
   ],
+  "resources/js/Pages/CloudServers.vue": [
+    "/build/assets/CloudServers-BWs44USZ.js"
+  ],
   "resources/js/Pages/Dashboard.vue": [
-    "/build/assets/Dashboard-pnLjovTl.js"
+    "/build/assets/Dashboard-Dat8CZ8H.js"
+  ],
+  "resources/js/Pages/DedicatedServers.vue": [
+    "/build/assets/DedicatedServers-DFiEZs72.js"
+  ],
+  "resources/js/Pages/Partials/ComputePlanSelector.vue": [
+    "/build/assets/ComputePlanSelector-B0TBxJUy.js"
+  ],
+  "resources/js/Pages/Partials/DedicatedPlanSelector.vue": [
+    "/build/assets/DedicatedPlanSelector-CXKeaSTL.js"
   ],
   "resources/js/Pages/PrivacyPolicy.vue": [
     "/build/assets/PrivacyPolicy-Dvn5U9K1.js"
   ],
   "resources/js/Pages/Profile/Partials/DeleteUserForm.vue": [
-    "/build/assets/DeleteUserForm-C5mKAfCX.js"
+    "/build/assets/DeleteUserForm-DmtQQ14K.js"
   ],
   "resources/js/Pages/Profile/Partials/LogoutOtherBrowserSessionsForm.vue": [
-    "/build/assets/LogoutOtherBrowserSessionsForm-D5HeWzJ2.js"
+    "/build/assets/LogoutOtherBrowserSessionsForm-B7JN_93T.js"
   ],
   "resources/js/Pages/Profile/Partials/TwoFactorAuthenticationForm.vue": [
-    "/build/assets/TwoFactorAuthenticationForm-BQHSVZRO.js"
+    "/build/assets/TwoFactorAuthenticationForm-LTvOglrl.js"
   ],
   "resources/js/Pages/Profile/Partials/UpdatePasswordForm.vue": [
-    "/build/assets/UpdatePasswordForm-DVX3CHcn.js"
+    "/build/assets/UpdatePasswordForm-CYhfy-cq.js"
   ],
   "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.vue": [
-    "/build/assets/UpdateProfileInformationForm-DCPNO_zT.js"
+    "/build/assets/UpdateProfileInformationForm-u_jwWYds.js"
   ],
   "resources/js/Pages/Profile/Show.vue": [
-    "/build/assets/Show-DVw1X6sF.js"
+    "/build/assets/Show-LcQAV0SZ.js"
   ],
   "resources/js/Pages/TermsOfService.vue": [
     "/build/assets/TermsOfService-CQ3A1TXK.js"
   ],
+  "resources/js/Pages/WebsiteHosting.vue": [
+    "/build/assets/WebsiteHosting-LpGU8IZ2.js"
+  ],
   "resources/js/Pages/Welcome.vue": [
-    "/build/assets/Welcome-fw4BC0B8.js"
+    "/build/assets/Welcome-DyznCitp.js"
   ],
   "resources/js/ssr.js": [],
   "vendor/tightenco/ziggy/dist/index.js": []

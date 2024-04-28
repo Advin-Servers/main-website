@@ -133,8 +133,14 @@ const form = reactive({
     ssh_key: null,
     name: null
 })
-
+import { Head } from '@inertiajs/vue3'
 </script>
+
+<Head>
+    <title>Affordable Dedicated Servers</title>
+    <meta head-key="description" name="description" content="Get Ryzen 7950X3D or AMD EPYC 9004 series dedicated servers at an affordable price across global locations." />
+    <meta head-key="keywords" name="keywords" content="Advin Servers, affordable hosting solutions, reliable hosting services, dedicated servers, 7950x3d servers, 7950x servers, epyc genoa servers, epyc milan servers, epyc servers, epyc dedicated servers" />
+</Head>
 
 <template>
     <AppLayout title="Dashboard">
@@ -317,7 +323,7 @@ const form = reactive({
                     </div>
                 </div>
             </div>
-            <div class="relative max-w-7xl mx-auto px-3 pt-10 mb-20">
+            <div class="relative max-w-7xl mx-auto px-3 pt-10">
                 <div class="flex flex-wrap flex-row-reverse"> <!-- Changed to flex-row-reverse -->
                     <div class="w-full lg:w-1/2">
                         <img class="m-1 rounded-lg border-gray-200 border mt-5 " src="https://fro-images.b-cdn.net/IMG_20230807_034614.jpg" alt="VPS Panel">

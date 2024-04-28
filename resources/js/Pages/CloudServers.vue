@@ -14,6 +14,7 @@ import CardSection from "@/Components/CardSection.vue";
 import {computed, onMounted, reactive, ref, watch} from 'vue';
 import ComputePlanSelector from "@/Pages/Partials/ComputePlanSelector.vue";
 import Faq from "@/Components/Faq.vue";
+import {Head} from "@inertiajs/vue3";
 
 
 const props = defineProps({
@@ -146,8 +147,12 @@ const form = reactive({
 })
 
 </script>
-
 <template>
+    <Head>
+        <title>High Performance Cloud VPS</title>
+        <meta head-key="description" name="description" content="Get KVM Cloud VPS servers featuring the world's fastest processors at an affordable price, starting at just $0.75/GB with root access and no contract." />
+        <meta head-key="keywords" name="keywords" content="Advin Servers, affordable hosting solutions, reliable hosting services, secure web hosting, cloud hosting, dedicated servers, epyc servers, epyc genoa, epyc genoa servers, epyc genoa 9654, cloud vps, kvm vps, amd epyc vps, ryzen vps, ryzen vds, 7950x vds, 7950x3d vds" />
+    </Head>
     <AppLayout title="Dashboard">
         <!-- Background Layer -->
         <div class="bg-black ">
@@ -367,33 +372,13 @@ const form = reactive({
                                 <span class="text-base font-normal leading-tight text-gray-500 ms-3">Quick, modern UI</span>
                             </li>
                         </ul>
-                        <p class="mt-4 text-gray-700">
+                        <p class="mt-6 text-gray-700">
                             Need more information? Read our documentation <a href="https://docs.advinservers.com/guides/controlpanel" target="_blank" class="text-blue-600">here</a>.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="relative max-w-7xl mx-auto px-3 pt-10">
-                <div class="flex flex-wrap flex-row-reverse"> <!-- Changed to flex-row-reverse -->
-                    <div class="w-full lg:w-1/2">
-                        <img class="m-1 lg:ml-32 rounded-lg border-gray-200 border mt-5 h-3/4 sm:ml-1" src="https://fro-images.b-cdn.net/chrome_6AGdRfOx8R%20(1).jpg" alt="AMD EPYC Photo">
-                    </div>
-                    <div class="w-full lg:w-5/12 mr-auto"> <!-- Changed ml-auto to mr-auto -->
-                        <p class="text-2xl pt-4 pb-3 font-semibold">
-                            The world's fastest processors
-                        </p>
-                        <p class="text-gray-700">
-                            The processors that we typically use in our cloud servers are among the fastest in the world.
-                        </p>
-                        <p class="text-gray-700 mt-4">
-                            All of our <b>KVM Standard VPS</b> hypervisors feature the former world record holder for the world's fastest processor, the AMD EPYC 7763, 7B13, or 7J13 (except for Osaka, which is scheduled for upgrade).
-                        </p>
-                        <p class="text-gray-700 mt-4">
-                            All of our <b>KVM Premium VPS</b> hypervisors feature among the world's current fastest server processors, including the AMD EPYC 9654 and 9554, featuring DDR5 ECC memory and 3.5+ GHz all-core boost.
-                        </p>
-                    </div>
-                </div>
-            </div>
+
             <div class="relative max-w-7xl mx-auto px-3 pt-10 ">
                 <div class="overflow-hidden sm:rounded-lg">
                     <div class="mt-5 mx-auto">

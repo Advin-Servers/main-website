@@ -9,10 +9,15 @@ import { BanknotesIcon } from '@heroicons/vue/24/outline'
 import { ServerStackIcon } from "@heroicons/vue/24/outline";
 import { HeartIcon } from "@heroicons/vue/24/outline";
 import {CheckIcon} from "@heroicons/vue/20/solid/index.js";
-import { Link } from '@inertiajs/vue3';
+import {Head, Link} from '@inertiajs/vue3';
 </script>
 
 <template>
+    <Head>
+        <title>Cloud VPS & Dedicated Servers</title>
+        <meta head-key="description" name="description" content="Get KVM Cloud VPS servers and dedicated servers featuring the world's fastest processors at an affordable price." />
+        <meta head-key="keywords" name="keywords" content="Advin Servers, affordable hosting solutions, reliable hosting services, secure web hosting, cloud hosting, dedicated servers, epyc servers, epyc genoa, epyc genoa servers, epyc genoa 9654, cloud vps, kvm vps, amd epyc vps, ryzen vps, ryzen vds, 7950x vds, 7950x3d vds" />
+    </Head>
     <AppLayout title="Dashboard">
         <!-- Background Layer -->
         <div class="bg-black">
