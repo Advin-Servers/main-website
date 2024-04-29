@@ -136,13 +136,12 @@ const form = reactive({
 import { Head } from '@inertiajs/vue3'
 </script>
 
-<Head>
-    <title>Affordable Dedicated Servers</title>
-    <meta head-key="description" name="description" content="Get Ryzen 7950X3D or AMD EPYC 9004 series dedicated servers at an affordable price across global locations." />
-    <meta head-key="keywords" name="keywords" content="Advin Servers, affordable hosting solutions, reliable hosting services, dedicated servers, 7950x3d servers, 7950x servers, epyc genoa servers, epyc milan servers, epyc servers, epyc dedicated servers" />
-</Head>
-
 <template>
+    <Head>
+        <title>Affordable Dedicated Servers</title>
+        <meta head-key="description" name="description" content="Get Ryzen 7950X3D or AMD EPYC 9004 series dedicated servers at an affordable price across global locations." />
+        <meta head-key="keywords" name="keywords" content="Advin Servers, affordable hosting solutions, reliable hosting services, dedicated servers, 7950x3d servers, 7950x servers, epyc genoa servers, epyc milan servers, epyc servers, epyc dedicated servers" />
+    </Head>
     <AppLayout title="Dashboard">
         <!-- Background Layer -->
         <div class="bg-black ">

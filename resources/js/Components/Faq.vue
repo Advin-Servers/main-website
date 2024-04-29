@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-auto max-w-7xl py-24 sm:py-32 mt-10">
+    <div class="mx-auto max-w-7xl py-24 sm:py-32 mt-5">
         <div class="mx-auto max-w-7xl divide-y divide-gray-900/10">
             <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
             <dl class="mt-5 space-y-6 divide-y divide-gray-900/10">

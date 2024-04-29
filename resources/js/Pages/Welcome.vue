@@ -196,14 +196,9 @@ import {Head, Link} from '@inertiajs/vue3';
                     </h1>
                 </div>
 
-                <div class="relative max-w-7xl mx-auto px-3 pt-10">
+                <div class="relative max-w-7xl mx-auto pt-20">
                     <div class="overflow-hidden sm:rounded-lg">
-                        <div class="mt-5 mx-auto">
-                            <h1 class="mb-4 font-bold text-3xl">
-                            <span class="text-black">
-                                Features
-                            </span>
-                            </h1>
+                        <div class="mx-auto">
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-14">
                                 <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                                     <div class="bg-white mr-5 ml-1 mt-5">
@@ -281,8 +276,8 @@ import {Head, Link} from '@inertiajs/vue3';
                 </div>
             </div>
             <div class="bg-white py-16 sm:py-24">
-                <div class="mx-auto max-w-7xl lg:px-4">
-                    <div class="relative overflow-hidden bg-gray-900 px-6 py-20 shadow-xl rounded-3xl sm:px-10 sm:py-24 md:px-12 lg:px-20">
+                <div class="mx-auto max-w-7xl pt-20">
+                    <div class="relative overflow-hidden bg-gray-900 px-6 py-20 shadow-xl rounded-3xl sm:px-10 sm:py-24 md:px-12 lg:px-20 ">
                         <img class="absolute inset-0 h-full w-full object-cover brightness-150 saturate-0 bg-black"/>
                         <div class="absolute inset-0 bg-gray-900/90 mix-blend-multiply" />
                         <div class="absolute -left-80 -top-56 transform-gpu blur-3xl" aria-hidden="true">
@@ -292,7 +287,6 @@ import {Head, Link} from '@inertiajs/vue3';
                             <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-r from-[#ff4694] to-[#776fff] opacity-25" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
                         </div>
                         <div class="relative mx-auto max-w-2xl lg:mx-0">
-                            <img class="h-12 w-auto" src="https://tailwindui.com/img/logos/workcation-logo-white.svg" alt="" />
                             <figure>
                                 <blockquote class="mt-6 text-lg font-semibold text-white sm:text-xl sm:leading-8">
                                     <p>“You may expect from the pricing that their service will be lacking but I have not found this to be the case with Advin. I can highly recommend Advin Servers, I really doubt you will find a better value or quality provider out there.

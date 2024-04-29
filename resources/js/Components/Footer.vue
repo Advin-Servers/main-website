@@ -62,7 +62,7 @@
                 </div>
             </div>
             <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
-                <p class="text-xs leading-5 text-gray-400">&copy; 2020 Your Company, Inc. All rights reserved.</p>
+                <p class="text-xs leading-5 text-gray-400">&copy; 2024 Advin Services, LLC. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -79,17 +79,19 @@ const navigation = {
         { name: 'Website Hosting', route: 'website' },
     ],
     support: [
-        { name: 'Contact', href: '#' },
-        { name: 'Documentation', href: '#' },
-        { name: 'Service Status', href: '#' },
+        { name: 'Contact', href: 'https://clients.advinservers.com/contact.php' },
+        { name: 'Documentation', href: 'https://docs.advinservers.com' },
+        { name: 'Service Status', href: 'https://status.advinservers.com' },
     ],
     services: [
-        { name: 'Client Area', href: '#' },
+        { name: 'Client Area', href: 'https://clients.advinservers.com' },
     ],
     legal: [
-        { name: 'Abuse', href: '#' },
-        { name: 'Privacy', href: '#' },
-        { name: 'Terms', href: '#' },
+        { name: 'Fair Use', href: 'https://docs.advinservers.com/policies/fair-use' },
+        { name: 'Privacy', href: 'https://docs.advinservers.com/policies/privacypolicy' },
+        { name: 'Terms', href: 'https://docs.advinservers.com/policies/termsofservice' },
+        { name: 'SLA', href: 'https://docs.advinservers.com/policies/sla' },
+        { name: 'Refund', href: 'https://docs.advinservers.com/policies/refund' },
     ],
     social: [
         {

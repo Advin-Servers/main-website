@@ -10,7 +10,7 @@
     "/build/assets/DialogModal-B-eK4OWS.js"
   ],
   "resources/js/Components/ApplicationLogo.vue": [
-    "/build/assets/Welcome-Bl6snZoX.js"
+    "/build/assets/SVGCheck-CvXhrTnC.js"
   ],
   "resources/js/Components/AuthenticationCard.vue": [
     "/build/assets/AuthenticationCard-C9mEk27i.js"
@@ -19,7 +19,7 @@
     "/build/assets/AuthenticationCardLogo-BE7wXEGb.js"
   ],
   "resources/js/Components/CardSection.vue": [
-    "/build/assets/Faq-HilIPF7B.js"
+    "/build/assets/Faq-0Pk9WOO1.js"
   ],
   "resources/js/Components/Checkbox.vue": [
     "/build/assets/Checkbox-BBcrr1ex.js"
@@ -37,10 +37,10 @@
     "/build/assets/DialogModal-B-eK4OWS.js"
   ],
   "resources/js/Components/Faq.vue": [
-    "/build/assets/Faq-HilIPF7B.js"
+    "/build/assets/Faq-0Pk9WOO1.js"
   ],
   "resources/js/Components/Footer.vue": [
-    "/build/assets/AppLayout-Dy8sg2VP.js"
+    "/build/assets/AppLayout-CBee71Sd.js"
   ],
   "resources/js/Components/FormSection.vue": [
     "/build/assets/FormSection-ybvcGyGW.js"
@@ -55,13 +55,13 @@
     "/build/assets/DialogModal-B-eK4OWS.js"
   ],
   "resources/js/Components/NavLink.vue": [
-    "/build/assets/AppLayout-Dy8sg2VP.js"
+    "/build/assets/AppLayout-CBee71Sd.js"
   ],
   "resources/js/Components/PrimaryButton.vue": [
     "/build/assets/PrimaryButton-DzU40Tsu.js"
   ],
   "resources/js/Components/SVGCheck.vue": [
-    "/build/assets/SVGCheck-CgF4JDP-.js"
+    "/build/assets/SVGCheck-CvXhrTnC.js"
   ],
   "resources/js/Components/SecondaryButton.vue": [
     "/build/assets/SecondaryButton-CuwfkeiC.js"
@@ -75,14 +75,11 @@
   "resources/js/Components/TextInput.vue": [
     "/build/assets/TextInput-B0hF2b1y.js"
   ],
-  "resources/js/Components/Welcome.vue": [
-    "/build/assets/Welcome-Bl6snZoX.js"
-  ],
   "resources/js/Layouts/AppLayout.vue": [
-    "/build/assets/AppLayout-Dy8sg2VP.js"
+    "/build/assets/AppLayout-CBee71Sd.js"
   ],
   "resources/js/Pages/API/Index.vue": [
-    "/build/assets/Index-V--J52rS.js"
+    "/build/assets/Index-Bt_XPLfY.js"
   ],
   "resources/js/Pages/API/Partials/ApiTokenManager.vue": [
     "/build/assets/ApiTokenManager-DAry7OGE.js"
@@ -109,13 +106,10 @@
     "/build/assets/VerifyEmail-DujjKN0r.js"
   ],
   "resources/js/Pages/CloudServers.vue": [
-    "/build/assets/CloudServers-BWs44USZ.js"
-  ],
-  "resources/js/Pages/Dashboard.vue": [
-    "/build/assets/Dashboard-Dat8CZ8H.js"
+    "/build/assets/CloudServers-CNMjj1BQ.js"
   ],
   "resources/js/Pages/DedicatedServers.vue": [
-    "/build/assets/DedicatedServers-DFiEZs72.js"
+    "/build/assets/DedicatedServers-B6wBLMYq.js"
   ],
   "resources/js/Pages/Partials/ComputePlanSelector.vue": [
     "/build/assets/ComputePlanSelector-B0TBxJUy.js"
@@ -142,16 +136,16 @@
     "/build/assets/UpdateProfileInformationForm-u_jwWYds.js"
   ],
   "resources/js/Pages/Profile/Show.vue": [
-    "/build/assets/Show-LcQAV0SZ.js"
+    "/build/assets/Show-CWjORBGi.js"
   ],
   "resources/js/Pages/TermsOfService.vue": [
     "/build/assets/TermsOfService-CQ3A1TXK.js"
   ],
   "resources/js/Pages/WebsiteHosting.vue": [
-    "/build/assets/WebsiteHosting-LpGU8IZ2.js"
+    "/build/assets/WebsiteHosting-DJX-LWQi.js"
   ],
   "resources/js/Pages/Welcome.vue": [
-    "/build/assets/Welcome-DyznCitp.js"
+    "/build/assets/Welcome-B7JWoUVu.js"
   ],
   "resources/js/ssr.js": [],
   "vendor/tightenco/ziggy/dist/index.js": []

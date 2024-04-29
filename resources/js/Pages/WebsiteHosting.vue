@@ -197,14 +197,9 @@ import {Head} from "@inertiajs/vue3";
                     </h1>
                 </div>
 
-                <div class="relative max-w-7xl mx-auto px-3 pt-10">
+                <div class="relative max-w-7xl mx-auto pt-10">
                     <div class="overflow-hidden sm:rounded-lg">
-                        <div class="mt-5 mx-auto">
-                            <h1 class="mb-4 font-bold text-3xl">
-                            <span class="text-black">
-                                Features
-                            </span>
-                            </h1>
+                        <div class="pt-10 mx-auto">
                             <div class="grid md:grid-cols-3 sm:grid-cols-1 gap-14">
                                 <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                                     <div class="bg-white mt-5">

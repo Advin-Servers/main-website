@@ -52,7 +52,7 @@ function toggleMenu() {
             <!-- Client area and order buttons -->
             <div class="hidden md:flex md:order-2 space-x-3 md:space-x-4 rtl:space-x-reverse">
                 <a href="https://clients.advinservers.com/login" class="rounded-md text-white border border-solid hover:border-gray-400 focus:ring-4 border-gray-200 focus:outline-none focus:ring-blue-300 font-medium text-sm px-4 py-2 text-center text-black">Client Area</a>
-                <a :href="route('cloud')" class="rounded-md text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-4 py-2 text-center">Order Cloud</a>
+                <Link :href="route('cloud')" class="rounded-md text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-4 py-2 text-center">Order Cloud</Link>
             </div>
         </div>
         <!-- Mobile Menu -->
