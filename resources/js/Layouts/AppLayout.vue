@@ -21,7 +21,7 @@ function toggleMenu() {
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <!-- Logo and brand name -->
             <a :href="route('home')" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="https://fro-images.b-cdn.net/bald-eagle-bird-golden-eagle-clip-art-icon-eagle-free-vectors-download.svg" class="h-7 invert" alt="Bald Eagle">
+                <img src="eagle_white.svg" class="mb-0.5 h-7" alt="Bald Eagle">
                 <span class="self-center text-2xl font-bold whitespace-nowrap text-white">Advin Servers</span>
             </a>
             <!-- Mobile menu button -->
