@@ -33,7 +33,7 @@
                 </td>
                 <td class="whitespace-nowrap py-2 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
                     <div class="font-normal text-gray-900">
-                        {{ parseFloat(plan.memory/1000).toFixed(0) }}GB DDR4
+                        {{ parseFloat(plan.memory/1000).toFixed(0) }}GB RAM
                     </div>
                 </td>
                 <td class="whitespace-nowrap py-2 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
