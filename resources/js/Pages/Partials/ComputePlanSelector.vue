@@ -38,7 +38,7 @@
                 </td>
                 <td class="whitespace-nowrap py-2 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
                     <div class="font-normal text-gray-900">
-                        {{ parseFloat(plan.disk).toFixed(0) }}GB NVMe SSD Storage
+                        {{ parseFloat(plan.disk).toFixed(0) }}GB NVMe SSD
                     </div>
                 </td>
                 <td class="whitespace-nowrap py-2 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">

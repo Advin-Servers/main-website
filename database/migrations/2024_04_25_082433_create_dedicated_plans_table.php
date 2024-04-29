@@ -16,11 +16,11 @@ return new class extends Migration
             $table->string('name');
             $table->foreignId('dedicated_product_group_id')->constrained()->onDelete('cascade');
             $table->foreignId('dedicated_compute_region_id')->constrained()->onDelete('cascade');
-            $table->integer('vcpu_cores');
-            $table->integer('memory');
-            $table->integer('bandwidth');
-            $table->integer('disk');
-            $table->decimal('price')->nullable();
+            $table->string('vcpu_cores');
+            $table->string('memory');
+            $table->string('bandwidth');
+            $table->string('disk');
+            $table->string('price')->nullable();
             $table->boolean('stock');
             $table->string('deployment_time');
             $table->string('whmcs_url');

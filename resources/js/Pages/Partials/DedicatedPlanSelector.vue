@@ -33,17 +33,17 @@
                 </td>
                 <td class="whitespace-nowrap py-2 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
                     <div class="font-normal text-gray-900">
-                        {{ parseFloat(plan.memory/1000).toFixed(0) }}GB DDR4
+                        {{ plan.memory }}
                     </div>
                 </td>
                 <td class="whitespace-nowrap py-2 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
                     <div class="font-normal text-gray-900">
-                        {{ parseFloat(plan.disk).toFixed(0) }}GB NVMe SSD Storage
+                        {{ plan.disk }}
                     </div>
                 </td>
                 <td class="whitespace-nowrap py-2 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
                     <div class="font-normal text-gray-900">
-                        {{ parseFloat(plan.bandwidth).toFixed(0)/1000 }}TB Bandwidth
+                        {{ plan.bandwidth }}
                     </div>
                 </td>
                 <td class="whitespace-nowrap py-2 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
@@ -53,7 +53,7 @@
                 </td>
                 <td class="whitespace-nowrap py-2 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
                     <div class="font-normal text-gray-900">
-                        ${{ parseFloat(plan.price) }}/month
+                        {{plan.price}}
                     </div>
                 </td>
                 <td class='relative pl-3 pr-4 text-right text-sm font-medium sm:pr-6'>
