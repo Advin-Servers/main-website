@@ -173,7 +173,7 @@ const form = reactive({
                                 No contract, monthly billed.
                             </p>
                             <ul class="list-disc text-white list-inside mt-5">
-                                <li>7 day money back guarantee</li>
+                                <li>14 day money back guarantee</li>
                                 <li>Enterprise hardware with great support</li>
                                 <li>Global availability of servers, 99.99% SLA guarantee</li>
                             </ul>
