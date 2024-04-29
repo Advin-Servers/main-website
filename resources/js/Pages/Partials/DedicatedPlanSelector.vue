@@ -28,12 +28,12 @@
                 </td>
                 <td class="whitespace-nowrap py-2 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
                     <div class="font-normal text-gray-900">
-                        {{ plan.vcpu_cores }}
+                        {{ plan.vcpu_cores }} vCPU
                     </div>
                 </td>
                 <td class="whitespace-nowrap py-2 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
                     <div class="font-normal text-gray-900">
-                        {{ plan.memory }}
+                        {{plan.memory}}
                     </div>
                 </td>
                 <td class="whitespace-nowrap py-2 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
@@ -43,7 +43,7 @@
                 </td>
                 <td class="whitespace-nowrap py-2 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
                     <div class="font-normal text-gray-900">
-                        {{ plan.bandwidth }}
+                        {{ plan.bandwidth}}
                     </div>
                 </td>
                 <td class="whitespace-nowrap py-2 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
@@ -53,11 +53,11 @@
                 </td>
                 <td class="whitespace-nowrap py-2 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
                     <div class="font-normal text-gray-900">
-                        {{plan.price}}
+                        ${{ parseFloat(plan.price) }}/month
                     </div>
                 </td>
                 <td class='relative pl-3 pr-4 text-right text-sm font-medium sm:pr-6'>
-                    <button v-if="plan.stock" class="text-blue-600 hover:text-blue-900" :href="plan.whmcs_url">Purchase</button>
+                    <a v-if="plan.stock" class="text-blue-600 hover:text-blue-900" :href="plan.whmcs_url">Purchase</a>
                     <span v-else class="text-red-600">Out of Stock</span>
                 </td>
             </tr>

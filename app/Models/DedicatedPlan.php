@@ -13,7 +13,7 @@ class DedicatedPlan extends Model
 
     public function productGroup()
     {
-        return $this->belongsTo(DedicatedComputeRegion::class, 'dedicated_product_group_id');
+        return $this->belongsTo(DedicatedProductGroup::class, 'dedicated_product_group_id');
     }
 
     public function dedicated_compute_region()

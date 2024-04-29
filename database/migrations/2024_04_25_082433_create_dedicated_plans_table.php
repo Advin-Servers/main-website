@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('memory');
             $table->string('bandwidth');
             $table->string('disk');
-            $table->string('price')->nullable();
+            $table->decimal('price')->nullable();
             $table->boolean('stock');
             $table->string('deployment_time');
             $table->string('whmcs_url');

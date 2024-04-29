@@ -53,8 +53,8 @@ watch(selectedLocation, (newVal, oldVal) => {
 
 function updateLocationsAndPlans(groupId) {
     const group = props.productGroups.find(g => g.id === groupId);
-    if (group && group.vps_plans) {
-        availableLocations.value = group.vps_plans.map(plan => plan.vps_compute_region)
+    if (group && group.dedicated_plans) {
+        availableLocations.value = group.dedicated_plans.map(plan => plan.dedicated_compute_region)
             .filter((location, index, self) =>
                     index === self.findIndex((loc) => (
                         loc.id === location.id
@@ -77,8 +77,8 @@ function updateLocationsAndPlans(groupId) {
 
 function updatePlans(locationId) {
     const group = props.productGroups.find(g => g.id === selectedProductGroup.value);
-    if (group && group.vps_plans) {
-        availablePlans.value = group.vps_plans.filter(plan => plan.vps_compute_region.id === locationId);
+    if (group && group.dedicated_plans) {
+        availablePlans.value = group.dedicated_plans.filter(plan => plan.dedicated_compute_region.id === locationId);
     } else {
         availablePlans.value = [];
     }
@@ -94,7 +94,7 @@ onMounted(() => {
 const isInStock = (locationId) => {
     const group = props.productGroups.find(g => g.id === selectedProductGroup.value);
     if (group) {
-        const plansInStock = group.vps_plans.filter(plan => plan.vps_compute_region.id === locationId && plan.stock);
+        const plansInStock = group.dedicated_plans.filter(plan => plan.dedicated_compute_region.id === locationId && plan.stock);
         return {
             available: plansInStock.length > 0,
             count: plansInStock.length
@@ -325,7 +325,7 @@ import { Head } from '@inertiajs/vue3'
             <div class="relative max-w-7xl mx-auto px-3 pt-10">
                 <div class="flex flex-wrap flex-row-reverse"> <!-- Changed to flex-row-reverse -->
                     <div class="w-full lg:w-1/2">
-                        <img class="m-1 rounded-lg border-gray-200 border mt-5 " src="https://fro-images.b-cdn.net/IMG_20230807_034614.jpg" alt="VPS Panel">
+                        <img class="m-1 rounded-lg border-gray-200 border mt-5 " src="https://fro-images.b-cdn.net/IMG_20230807_034614.jpg" alt="dedicated Panel">
                     </div>
                     <div class="w-full lg:w-5/12 mr-auto"> <!-- Changed ml-auto to mr-auto -->
                         <p class="text-2xl pt-4 pb-3 font-semibold">
