@@ -289,7 +289,7 @@ import {Head, Link} from '@inertiajs/vue3';
                         <div class="relative mx-auto max-w-2xl lg:mx-0">
                             <figure>
                                 <blockquote class="mt-6 text-lg font-semibold text-white sm:text-xl sm:leading-8">
-                                    <p>“Advin Servers ensures that only the best hardware and services are offered at the prices you deserve. Their commitment to quality and customer satisfaction sets them apart with some of the cheapest cloud in the industry. ”</p>
+                                    <p>“Advin Servers ensures that only the best hardware and services are offered at the prices you deserve. Their commitment to quality and customer satisfaction sets them apart, while still offering a product that is 10x cheaper than the competition. ”</p>
                                 </blockquote>
                                 <figcaption class="mt-6 text-base text-white">
                                     <div class="font-semibold">John</div>
