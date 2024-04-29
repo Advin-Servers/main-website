@@ -11,6 +11,8 @@ Route::get('/', function () {
 
 Route::get('/cloud', [\App\Http\Controllers\VpsController::class, 'home'])->name('cloud');
 
+Route::permanentRedirect('/vps', '/cloud');
+
 Route::get('/dedicated', [\App\Http\Controllers\DedicatedController::class, 'home'])->name('dedicated');
 
 Route::get('/website', function () {
