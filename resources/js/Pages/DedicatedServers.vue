@@ -139,9 +139,18 @@ import { Head } from '@inertiajs/vue3'
 <template>
     <Head>
         <title>Affordable Dedicated Servers</title>
-        <meta head-key="description" name="description" content="Get Ryzen 7950X3D or AMD EPYC 9004 series dedicated servers at an affordable price across global locations." />
-        <meta head-key="keywords" name="keywords" content="Advin Servers, affordable hosting solutions, reliable hosting services, dedicated servers, 7950x3d servers, 7950x servers, epyc genoa servers, epyc milan servers, epyc servers, epyc dedicated servers" />
+        <meta name="description" content="Access top-tier Ryzen 7950X3D and AMD EPYC 9004 series dedicated servers at competitive prices, available globally." />
+        <meta name="keywords" content="dedicated servers, Ryzen 7950X3D, AMD EPYC 9004, affordable hosting, reliable hosting services, global server locations, EPYC Genoa, EPYC Milan, high-performance servers" />
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://advinservers.com/" />
+        <meta property="og:title" content="Affordable Dedicated Servers" />
+        <meta property="og:description" content="Get high-performance Ryzen 7950X3D or AMD EPYC 9004 series dedicated servers at unbeatable prices, available in multiple global locations." />
+        <meta property="og:image" content="https://advinservers.com/eagle.png" />
+        <meta property="og:site_name" content="Advin Servers" />
+        <meta property="og:color" content="#FFFFFF" /> <!-- Discord Embed Color set to white -->
     </Head>
+
     <AppLayout title="Dashboard">
         <!-- Background Layer -->
         <div class="bg-black ">

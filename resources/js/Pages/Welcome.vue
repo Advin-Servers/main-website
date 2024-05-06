@@ -15,9 +15,18 @@ import {Head, Link} from '@inertiajs/vue3';
 <template>
     <Head>
         <title>Cloud VPS & Dedicated Servers</title>
-        <meta head-key="description" name="description" content="Get KVM Cloud VPS servers and dedicated servers featuring the world's fastest processors at an affordable price." />
-        <meta head-key="keywords" name="keywords" content="Advin Servers, affordable hosting solutions, reliable hosting services, secure web hosting, cloud hosting, dedicated servers, epyc servers, epyc genoa, epyc genoa servers, epyc genoa 9654, cloud vps, kvm vps, amd epyc vps, ryzen vps, ryzen vds, 7950x vds, 7950x3d vds" />
+        <meta name="description" content="Access Cloud VPS and dedicated servers with the world's fastest processors including AMD EPYC and Ryzen, available at an affordable price." />
+        <meta name="keywords" content="Cloud VPS, dedicated servers, KVM VPS, AMD EPYC VPS, Ryzen VPS, EPYC Genoa, secure hosting, affordable hosting solutions, reliable hosting services, Advin Servers" />
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://advinservers.com/" />
+        <meta property="og:title" content="Cloud VPS & Dedicated Servers" />
+        <meta property="og:description" content="Explore premium Cloud VPS and dedicated servers featuring AMD EPYC and Ryzen processors. Start leveraging powerful hosting solutions at competitive prices today." />
+        <meta property="og:image" content="https://advinservers.com/eagle.png" />
+        <meta property="og:site_name" content="Advin Servers" />
+        <meta property="og:color" content="#FFFFFF" /> <!-- Discord Embed Color set to white -->
     </Head>
+
     <AppLayout title="Dashboard">
         <!-- Background Layer -->
         <div class="bg-black">

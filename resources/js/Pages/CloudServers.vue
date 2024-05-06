@@ -150,9 +150,18 @@ const form = reactive({
 <template>
     <Head>
         <title>High Performance Cloud VPS</title>
-        <meta head-key="description" name="description" content="Get KVM Cloud VPS servers featuring the world's fastest processors at an affordable price, starting at just $0.75/GB with root access and no contract." />
-        <meta head-key="keywords" name="keywords" content="Advin Servers, affordable hosting solutions, reliable hosting services, secure web hosting, cloud hosting, dedicated servers, epyc servers, epyc genoa, epyc genoa servers, epyc genoa 9654, cloud vps, kvm vps, amd epyc vps, ryzen vps, ryzen vds, 7950x vds, 7950x3d vds" />
+        <meta name="description" content="Experience elite performance with our Cloud VPS, featuring world-class AMD EPYC and Ryzen processors. Start at just $0.75/GB with full root access, no contracts required." />
+        <meta name="keywords" content="Cloud VPS, KVM VPS, AMD EPYC VPS, Ryzen VDS, affordable hosting, reliable hosting, secure web hosting, cloud hosting, dedicated servers, EPYC Genoa, 7950X VDS, no contract hosting" />
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://advinservers.com/" />
+        <meta property="og:title" content="High-Performance Cloud VPS" />
+        <meta property="og:description" content="Explore top-tier Cloud VPS solutions with AMD EPYC and Ryzen technologies at competitive prices. No contracts, full root access, starting from $0.75/GB." />
+        <meta property="og:image" content="https://advinservers.com/eagle.png" />
+        <meta property="og:site_name" content="Advin Servers" />
+        <meta property="og:color" content="#FFFFFF" /> <!-- Discord Embed Color set to white -->
     </Head>
+
     <AppLayout title="Dashboard">
         <!-- Background Layer -->
         <div class="bg-black ">

@@ -16,9 +16,18 @@ import {Head} from "@inertiajs/vue3";
 <template>
     <Head>
         <title>Website Hosting</title>
-        <meta head-key="description" name="description" content="Get cPanel or DirectAdmin website hosting starting at just $1.99/month on high-performance hardware." />
-        <meta head-key="keywords" name="keywords" content="Advin Servers, affordable hosting solutions, reliable hosting services, cpanel hosting, website hosting, directadmin hosting" />
+        <meta name="description" content="Affordable cPanel and DirectAdmin website hosting on high-performance hardware, starting at just $1.99/month." />
+        <meta name="keywords" content="website hosting, cPanel hosting, DirectAdmin hosting, Advin Servers, affordable hosting, reliable hosting, high-performance hosting" />
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://advinservers.com/" />
+        <meta property="og:title" content="Website Hosting" />
+        <meta property="og:description" content="Start your website with our affordable cPanel or DirectAdmin hosting solutions, equipped with high-performance hardware from just $1.99/month." />
+        <meta property="og:image" content="https://advinservers.com/eagle.png" />
+        <meta property="og:site_name" content="Advin Servers" />
+        <meta property="og:color" content="#FFFFFF" /> <!-- Discord Embed Color set to white -->
     </Head>
+
     <AppLayout title="Dashboard">
         <!-- Background Layer -->
         <div class="bg-black">
