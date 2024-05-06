@@ -145,7 +145,7 @@ import { Head } from '@inertiajs/vue3'
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://advinservers.com/" />
         <meta property="og:title" content="Affordable Dedicated Servers" />
-        <meta property="og:description" content="Get high-performance Ryzen 7950X3D or AMD EPYC 9004 series dedicated servers at unbeatable prices, available in multiple global locations." />
+        <meta property="og:description" content="Get high performance Ryzen 7950X3D or AMD EPYC 9004 series dedicated servers at unbeatable prices, available in multiple global locations." />
         <meta property="og:image" content="https://advinservers.com/eagle.png" />
         <meta property="og:site_name" content="Advin Servers" />
         <meta property="og:color" content="#FFFFFF" /> <!-- Discord Embed Color set to white -->

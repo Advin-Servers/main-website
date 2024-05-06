@@ -47,8 +47,8 @@
                     </div>
                 </td>
                 <td class="whitespace-nowrap py-2 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                    <div class="font-normal text-gray-900">
-                       {{plan.deployment_time}}
+                    <div :class="{'text-green-500': plan.deployment_time === 'Instant', 'text-amber-500': plan.deployment_time !== 'Instant'}">
+                        {{ plan.deployment_time }}
                     </div>
                 </td>
                 <td class="whitespace-nowrap py-2 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
