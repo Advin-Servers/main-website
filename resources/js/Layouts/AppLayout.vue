@@ -17,7 +17,7 @@ function toggleMenu() {
 <template>
 
 
-    <nav class="bg-black fixed w-full z-20 top-0 border-b border-gray-900">
+    <nav class="bg-black fixed w-full z-20 top-0 shadow-xl">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <!-- Logo and brand name -->
             <a :href="route('home')" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -51,8 +51,8 @@ function toggleMenu() {
             </div>
             <!-- Client area and order buttons -->
             <div class="hidden md:flex md:order-2 space-x-3 md:space-x-4 rtl:space-x-reverse">
-                <a href="https://clients.advinservers.com/login" class="rounded-md text-white border border-solid hover:border-gray-400 focus:ring-4 border-gray-200 focus:outline-none focus:ring-blue-300 font-medium text-sm px-4 py-2 text-center text-black">Client Area</a>
-                <Link :href="route('cloud')" class="rounded-md text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-4 py-2 text-center">Order Cloud</Link>
+                <a href="https://clients.advinservers.com/login" class="rounded-md text-white border border-solid hover:border-gray-200  border-gray-500 focus:outline-none focus:ring-blue-300 font-bold text-sm px-4 py-2 text-center">Client Area</a>
+                <Link :href="route('cloud')" class="rounded-md text-white bg-gradient-to-r from-gray-800 to-gray-950 font-bold text-sm px-4 py-2 text-center border-black border border-transparent">Order Cloud Server</Link>
             </div>
         </div>
         <!-- Mobile Menu -->

@@ -205,12 +205,11 @@ const form = reactive({
                         <div class="grid lg:grid-cols-3 sm:lg:grid-cols-1 gap-4">
                             <div v-for="(group, index) in productGroups" :key="group.id" class="relative" >
                                 <input class="peer hidden" type="radio" name="group" :checked="index === 0" :value="group.id" :id="'group_' + index" v-model="selectedProductGroup"  />
-                                <label :for="'group_' + index" class=" rounded-md shadow border-gray-200 peer-checked:border-solid peer-checked:border-gray-400 flex cursor-pointer select-none border p-4 pr-20" for="radio_1">
+                                <label :for="'group_' + index" class=" rounded-md peer-checked:border-solid peer-checked:border-gray-400 flex cursor-pointer select-none border p-4 pr-20" for="radio_1">
                                     <div class="ml-2">
                                         <span class="mt-2 font-normal">{{ group.name }}</span>
                                         <p class="text-slate-500 text-sm leading-6">{{ group.description }}</p>
-                                        <p class="text-slate-500 font-semibold text-xs leading-6">{{ group.subtext }}</p>
-
+                                        <p class="text-slate-500 font-thin text-xs leading-6">({{ group.subtext }})</p>
                                     </div>
                                 </label>
                             </div>
@@ -231,12 +230,12 @@ const form = reactive({
                             <input class="peer hidden" :id="'location_' + index" type="radio" name="location"
                                    :checked="index === 0" :value="location.id" v-model="selectedLocation" @change="updatePlans(location.id)" />
 
-                            <label :for="'location_' + index" class="border-gray-200 rounded-md shadow peer-checked:border-solid peer-checked:border-gray-400 flex cursor-pointer select-none border p-3">
+                            <label :for="'location_' + index" class="rounded-md peer-checked:border-solid peer-checked:border-gray-400 flex cursor-pointer select-none border p-3">
                                 <img width="48" height="32" :src="location.flag_url" alt="Flag"/>
                                 <div class="ml-5">
                 <span class="font-normal">{{ location.display_name }}<br />
                     <span class="font-thin text-xs" :class="isInStock(location.id).available ? 'text-green-600' : 'text-red-600'">
-                        {{ isInStock(location.id).available ? 'In Stock, ' + isInStock(location.id).count + ' available plan(s)' : 'Out of Stock, 0 available plans' }}
+                        {{ isInStock(location.id).available ? 'Available Plans' : 'No Available Plans' }}
                     </span>
                 </span>
                                 </div>

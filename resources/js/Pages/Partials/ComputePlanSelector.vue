@@ -1,6 +1,6 @@
 <template>
 
-    <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 rounded-md overflow-x-auto">
+    <div class="overflow-hidden ring-1 ring-black ring-gray-300 rounded-md overflow-x-auto">
 
         <table class="w-full divide-y divide-gray-300">
             <thead class="text-xs text-gray-700 bg-gray-50">
@@ -21,7 +21,7 @@
             <tbody class="divide-y divide-gray-200 bg-white">
             <tr v-for="(plan, index) in availablePlans" :key="plan.id">
 
-                <td class="whitespace-nowrap py-2 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
+                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
                     <div class="font-normal text-gray-900">
                         {{ plan.name }}
                     </div>
