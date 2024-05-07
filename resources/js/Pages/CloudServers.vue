@@ -43,11 +43,11 @@ watch(selectedProductGroup, (newVal, oldVal) => {
     }
 });
 
-watch(selectedLocation, (newVal, oldVal) => {
+watch(selectedProductGroup, (newVal, oldVal) => {
     if (newVal !== oldVal) {
-        updatePlans(newVal);
-    } else {
-        availablePlans.value = [];
+        selectedLocation.value = null; // Reset the selected location
+        selectedPlan.value = null; // Reset the selected plan
+        updateLocationsAndPlans(newVal);
     }
 });
 
@@ -56,16 +56,17 @@ function updateLocationsAndPlans(groupId) {
     if (group && group.vps_plans) {
         availableLocations.value = group.vps_plans.map(plan => plan.vps_compute_region)
             .filter((location, index, self) =>
-                    index === self.findIndex((loc) => (
-                        loc.id === location.id
-                    ))
+                index === self.findIndex((loc) => loc.id === location.id)
             );
 
         if (availableLocations.value.length > 0) {
-            selectedLocation.value = availableLocations.value[0].id;
+            selectedLocation.value = availableLocations.value[0].id; // Automatically select the first location
+            updatePlans(selectedLocation.value); // Update plans for newly selected location
         } else {
             availableLocations.value = [];
+            availablePlans.value = [];
             selectedLocation.value = null;
+            selectedPlan.value = null;
         }
     } else {
         availableLocations.value = [];
@@ -74,6 +75,7 @@ function updateLocationsAndPlans(groupId) {
         selectedPlan.value = null;
     }
 }
+
 
 function updatePlans(locationId) {
     const group = props.productGroups.find(g => g.id === selectedProductGroup.value);
