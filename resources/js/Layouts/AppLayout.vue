@@ -34,7 +34,7 @@ function toggleMenu() {
 
             <!-- Primary Navigation Links -->
             <div class="hidden w-full md:flex md:w-auto md:order-1" :class="{'flex': isOpen, 'hidden': !isOpen}" id="navbar-sticky">
-                <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:mt-0 md:border-0 bg-black md:p-0">
+                <ul class="flex flex-col p-4 mt-4 rounded-lg md:flex-row md:mt-0 bg-black md:p-0">
                     <li>
                         <NavLink :href="route('home')" :active="route().current('home')">Home</NavLink>
                     </li>
