@@ -24,7 +24,7 @@ import {Head, Link} from '@inertiajs/vue3';
         <meta property="og:description" content="Explore premium Cloud VPS and dedicated servers featuring AMD EPYC and Ryzen processors. Start leveraging powerful hosting solutions at competitive prices today." />
         <meta property="og:image" content="https://advinservers.com/eagle.png" />
         <meta property="og:site_name" content="Advin Servers" />
-        <meta property="og:color" content="#FFFFFF" /> <!-- Discord Embed Color set to white -->
+        <meta name="theme-color" content="#FFFFFF" />
     </Head>
 
     <AppLayout title="Dashboard">

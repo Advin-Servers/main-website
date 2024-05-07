@@ -25,7 +25,7 @@ import {Head} from "@inertiajs/vue3";
         <meta property="og:description" content="Start your website with our affordable cPanel or DirectAdmin hosting solutions, equipped with high-performance hardware from just $1.99/month." />
         <meta property="og:image" content="https://advinservers.com/eagle.png" />
         <meta property="og:site_name" content="Advin Servers" />
-        <meta property="og:color" content="#FFFFFF" /> <!-- Discord Embed Color set to white -->
+        <meta name="theme-color" content="#FFFFFF" />
     </Head>
 
     <AppLayout title="Dashboard">

@@ -159,7 +159,7 @@ const form = reactive({
         <meta property="og:description" content="Explore top-tier Cloud VPS solutions with AMD EPYC and Ryzen technologies at competitive prices. No contracts, full root access, starting from $0.75/GB." />
         <meta property="og:image" content="https://advinservers.com/eagle.png" />
         <meta property="og:site_name" content="Advin Servers" />
-        <meta property="og:color" content="#FFFFFF" /> <!-- Discord Embed Color set to white -->
+        <meta name="theme-color" content="#FFFFFF" />
     </Head>
 
     <AppLayout title="Dashboard">
