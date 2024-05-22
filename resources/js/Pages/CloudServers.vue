@@ -51,6 +51,16 @@ watch(selectedProductGroup, (newVal, oldVal) => {
     }
 });
 
+const sortedAvailableLocations = computed(() => {
+    return [...availableLocations.value].sort((a, b) => {
+        if (a.flag_url > b.flag_url) return -1;
+        if (a.flag_url < b.flag_url) return 1;
+        return 0;
+    });
+});
+
+
+
 function updateLocationsAndPlans(groupId) {
     const group = props.productGroups.find(g => g.id === groupId);
     if (group && group.vps_plans) {
@@ -87,11 +97,13 @@ function updatePlans(locationId) {
 }
 
 onMounted(() => {
-    if (props.productGroups && props.productGroups.length > 0) {
-        selectedProductGroup.value = props.productGroups[0].id;
+    if (props.productGroups && props.productGroups.length > 1) {
+        selectedProductGroup.value = props.productGroups[1].id;
         updateLocationsAndPlans(selectedProductGroup.value);
     }
 });
+
+
 
 const isInStock = (locationId) => {
     const group = props.productGroups.find(g => g.id === selectedProductGroup.value);
@@ -194,7 +206,16 @@ const form = reactive({
             </div>
         </div>
 
+
         <div class="relative max-w-7xl mx-auto pt-10">
+            <div class="relative max-w-7xl mx-auto px-3 pt-10 mb-5">
+            <!-- Black banner with Genoa text in red gradient acrooss the screen similar relative max-w-7xl -->
+            <div class="p-4 mb-4 text-sm text-white rounded-lg bg-black border-2 " role="alert">
+                <span class="font-medium">Check out our new EPYC Genoa 9004 (KVM Premium VPS) lineup!</span> Featuring among the world's fastest processors and DDR5 memory at an affordable price.
+            </div>
+            </div>
+
+
             <CardSection>
                 <template #title>
                     Service Type
@@ -207,11 +228,11 @@ const form = reactive({
                         <div class="grid lg:grid-cols-3 sm:lg:grid-cols-1 gap-4">
                             <div v-for="(group, index) in productGroups" :key="group.id" class="relative" >
                                 <input class="peer hidden" type="radio" name="group" :checked="index === 0" :value="group.id" :id="'group_' + index" v-model="selectedProductGroup"  />
-                                <label :for="'group_' + index" class=" rounded-md peer-checked:border-solid peer-checked:border-gray-400 flex cursor-pointer select-none border p-4 pr-20" for="radio_1">
+                                <label :for="'group_' + index" class=" rounded-md peer-checked:border-solid peer-checked:border-gray-400 flex cursor-pointer select-none border-2 p-4 pr-20 " for="radio_1">
                                     <div class="ml-2">
                                         <span class="mt-2 font-normal">{{ group.name }}</span>
                                         <p class="text-slate-500 text-sm leading-6">{{ group.description }}</p>
-                                        <p class="text-slate-500 font-thin text-xs leading-6">({{ group.subtext }})</p>
+                                        <p class="text-slate-500 font-thin text-xs leading-6">{{ group.subtext }}</p>
                                     </div>
                                 </label>
                             </div>
@@ -228,11 +249,11 @@ const form = reactive({
                 </template>
                 <template #form>
                     <div class="grid lg:grid-cols-3 sm:lg:grid-cols-1 gap-4">
-                        <div v-for="(location, index) in availableLocations" :key="location.id" class="relative">
+                        <div v-for="(location, index) in sortedAvailableLocations" :key="location.id" class="relative">
                             <input class="peer hidden" :id="'location_' + index" type="radio" name="location"
                                    :checked="index === 0" :value="location.id" v-model="selectedLocation" @change="updatePlans(location.id)" />
 
-                            <label :for="'location_' + index" class="rounded-md peer-checked:border-solid peer-checked:border-gray-400 flex cursor-pointer select-none border p-3">
+                            <label :for="'location_' + index" class="rounded-md peer-checked:border-solid peer-checked:border-gray-400 border-2 flex cursor-pointer select-none  p-3 ">
                                 <img width="48" height="32" :src="location.flag_url" alt="Flag"/>
                                 <div class="ml-5">
                 <span class="font-normal">{{ location.display_name }}<br />
@@ -244,6 +265,7 @@ const form = reactive({
                             </label>
                         </div>
                     </div>
+
 
                 </template>
             </CardSection>

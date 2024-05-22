@@ -1,6 +1,6 @@
 <template>
 
-    <div class="overflow-hidden ring-1 ring-black ring-gray-300 rounded-md overflow-x-auto">
+    <div class="overflow-hidden ring-2  ring-gray-200 rounded-md overflow-x-auto">
 
         <table class="w-full divide-y divide-gray-300">
             <thead class="text-xs text-gray-700 bg-gray-50">
