@@ -210,8 +210,8 @@ const form = reactive({
         <div class="relative max-w-7xl mx-auto pt-10">
             <div class="relative max-w-7xl mx-auto px-3 pt-10 mb-5">
             <!-- Black banner with Genoa text in red gradient acrooss the screen similar relative max-w-7xl -->
-            <div class="p-4 mb-4 text-sm text-white rounded-lg bg-black border-2 " role="alert">
-                <span class="font-medium">Check out our new EPYC Genoa 9004 (KVM Premium VPS) lineup!</span> Featuring among the world's fastest processors and DDR5 memory at an affordable price.
+            <div class="p-4 mb-4 text-sm rounded-lg bg-red-100 border border-red-400 text-red-700 " role="alert">
+                <span class="font-medium">Quilibrium is blocked on our KVM Standard and Premium VPS due to having shared vCPU cores.</span>
             </div>
             </div>
 
