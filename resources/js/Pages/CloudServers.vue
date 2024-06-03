@@ -210,8 +210,8 @@ const form = reactive({
         <div class="relative max-w-7xl mx-auto pt-10">
             <div class="relative max-w-7xl mx-auto px-3 pt-10 mb-5">
             <!-- Black banner with Genoa text in red gradient acrooss the screen similar relative max-w-7xl -->
-            <div class="p-4 mb-4 text-sm rounded-md border bg-orange-100 border-orange-500 text-orange-700 " role="alert">
-                <span class="font-medium">Quilibrium is blocked on our KVM Standard and Premium VPS due to having shared vCPU cores. Please use the dedicated Quilibrium line or dedicated servers.</span>
+            <div class="p-4 mb-4 text-sm rounded-md border bg-orange-100 border-orange-500 text-orange-700" role="alert">
+                <span class="font-normal">Quilibrium is blocked on our KVM Standard and Premium VPS due to having shared vCPU cores. Please use the Quilibrium lineup or dedicated servers to run Quilibrium nodes.</span>
             </div>
             </div>
 
