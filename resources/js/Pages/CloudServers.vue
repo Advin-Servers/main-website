@@ -53,6 +53,12 @@ watch(selectedProductGroup, (newVal, oldVal) => {
 
 const sortedAvailableLocations = computed(() => {
     return [...availableLocations.value].sort((a, b) => {
+        const aInStock = isInStock(a.id).available;
+        const bInStock = isInStock(b.id).available;
+
+        if (aInStock && !bInStock) return -1;
+        if (!aInStock && bInStock) return 1;
+
         if (a.flag_url > b.flag_url) return -1;
         if (a.flag_url < b.flag_url) return 1;
         return 0;
