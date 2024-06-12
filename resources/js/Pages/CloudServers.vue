@@ -76,8 +76,20 @@ function updateLocationsAndPlans(groupId) {
             );
 
         if (availableLocations.value.length > 0) {
+            availableLocations.value = [...availableLocations.value].sort((a, b) => {
+                const aInStock = isInStock(a.id).available;
+                const bInStock = isInStock(b.id).available;
+
+                if (aInStock && !bInStock) return -1;
+                if (!aInStock && bInStock) return 1;
+
+                if (a.flag_url > b.flag_url) return -1;
+                if (a.flag_url < b.flag_url) return 1;
+                return 0;
+            });
+
             selectedLocation.value = availableLocations.value[0].id; // Automatically select the first location
-            updatePlans(selectedLocation.value); // Update plans for newly selected location
+            updatePlans(selectedLocation.value); // Update plans for the newly selected location
         } else {
             availableLocations.value = [];
             availablePlans.value = [];
@@ -91,6 +103,7 @@ function updateLocationsAndPlans(groupId) {
         selectedPlan.value = null;
     }
 }
+
 
 
 function updatePlans(locationId) {
