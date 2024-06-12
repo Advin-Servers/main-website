@@ -430,10 +430,12 @@ const form = reactive({
                 </div>
             </div>
 
+
+
             <div class="relative max-w-7xl mx-auto px-3 pt-10 ">
                 <div class="overflow-hidden sm:rounded-lg">
-                    <div class="mt-5 mx-auto">
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="mx-auto">
+                        <!--<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                             <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                                 <div class="bg-white mr-5 ml-1 mt-5">
                                     <div class="mb-6 md:mb-8 rounded-md border-solid border-2 w-16 h-16 flex items-center justify-center">
@@ -515,7 +517,7 @@ const form = reactive({
                                     </p>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
 
                         <Faq :faq="faq"></Faq>
 
