@@ -244,7 +244,7 @@ const form = reactive({
                 </template>
                 <template #form>
                     <div class="col-span-6 sm:col-span-4">
-                        <div class="grid lg:grid-cols-3 sm:lg:grid-cols-1 gap-4">
+                        <div class="grid lg:grid-cols-2 sm:lg:grid-cols-1 gap-4">
                             <div v-for="(group, index) in productGroups" :key="group.id" class="relative" >
                                 <input class="peer hidden" type="radio" name="group" :checked="index === 0" :value="group.id" :id="'group_' + index" v-model="selectedProductGroup"  />
                                 <label :for="'group_' + index" class=" rounded-md peer-checked:border-solid peer-checked:border-gray-400 flex cursor-pointer select-none border-2 p-4 pr-20 " for="radio_1">
