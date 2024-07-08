@@ -117,7 +117,7 @@ function updatePlans(locationId) {
 
 onMounted(() => {
     if (props.productGroups && props.productGroups.length > 1) {
-        selectedProductGroup.value = props.productGroups[1].id;
+        selectedProductGroup.value = props.productGroups[0].id;
         updateLocationsAndPlans(selectedProductGroup.value);
     }
 });
