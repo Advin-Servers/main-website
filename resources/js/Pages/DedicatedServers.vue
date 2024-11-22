@@ -172,7 +172,7 @@ import { Head } from '@inertiajs/vue3'
                             </p>
                             <ul class="list-disc text-white list-inside mt-5">
                                 <li>IPMI or KVM access provided</li>
-                                <li>Enterprise hardware with great support</li>
+                                <li>2 x 256GB SSD disks included for free</li>
                                 <li>Global availability of servers, 99.99% SLA guarantee</li>
                             </ul>
                         </div>
@@ -199,7 +199,6 @@ import { Head } from '@inertiajs/vue3'
                                         <span class="mt-2 font-normal">{{ group.name }}</span>
                                         <p class="text-slate-500 text-sm leading-6">{{ group.description }}</p>
                                         <p class="text-slate-500 font-semibold text-xs leading-6">{{ group.subtext }}</p>
-
                                     </div>
                                 </label>
                             </div>
@@ -286,7 +285,7 @@ import { Head } from '@inertiajs/vue3'
                                     <div class="mb-6 md:mb-8 rounded-md border-solid border-2 w-16 h-16 flex items-center justify-center">
                                         <CloudIcon class="h-10 text-black"> </CloudIcon>
                                     </div>
-                                    <h4 class="text-xl font-bold mb-2">All NVMe Storage</h4>
+                                    <h4 class="text-xl font-bold mb-2">SSD Storage</h4>
                                     <p class="text-gray-700">
                                         Almost all of our servers contain lightning fast solid state storage, resulting in low latency access times to your data.
                                     </p>
